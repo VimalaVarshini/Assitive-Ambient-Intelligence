@@ -16,13 +16,13 @@ When a patient completes a task, the RFID scanner detects the tag.
 The microcontroller processes the data and updates the caregiver’s dashboard.
 If the patient misses a task, the Patient Activity Tracker displays the information in red color; otherwise, completed tasks are displayed in green color, which can be monitored by the patient's caregiver.
 # Environment Used
-**Raspberry Pi 4B:** Serves as the primary computational unit.
-**RC522 RFID Scanner:** Detects RFID tags for task tracking.
-**RFID Tags:** Placed at strategic locations to track task completion.
-**Flask Framework:** Used for developing the web-based dashboard.
+Raspberry Pi 4B:Serves as the primary computational unit.
+RC522 RFID Scanner: Detects RFID tags for task tracking.
+RFID Tags: Placed at strategic locations to track task completion.
+Flask Framework:Used for developing the web-based dashboard.
 # Future Scope
-**GPS Integration:** To track patient movement and prevent wandering.
-**Integration with AI**: Predictive analytics to detect behavior changes and send proactive alerts.
-**Smartphone App:** For caregivers to track real-time task completion on mobile devices.
+GPS Integration:To track patient movement and prevent wandering.
+Integration with AI: Predictive analytics to detect behavior changes and send proactive alerts.
+Smartphone App: For caregivers to track real-time task completion on mobile devices.
 # Conclusion
 The RFID-enabled wearable device offers a non-intrusive and efficient solution for monitoring dementia patients’ daily activities. By automating task tracking, caregivers can reduce stress and ensure timely interventions. The system enhances patient autonomy while improving the quality of caregiving
