@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity log</title>
+</head>
+<body>
+<h1>Activity log</h1>
+{% if data %}
+<ul>
+{% for entry in data %}
+<li>
+<p>ID: {{ entry.id }}</p>
+<p>Data: {{ entry.data }}</p>
+<p>Date and time: {{ entry.datetime }}</p>
+</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No data read</p>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task log</title>
+</head>
+<body>
+<h1>Task log</h1>
+{% if data %}
+<ul>
+{% for activity in data %}
+<li>
+<p style="color: {% if activity.completion==2 %}green{% elif 
+activity.completion==1 %}black{% else %}red{% endif %};">Task: {{ activity.task 
+}}</p>
+<p style="color: {% if activity.completion==2 %}green{% elif 
+activity.completion==1 %}black{% else %}red{% endif %};">Data: {{ activity.date 
+}}</p>
+<p style="color: {% if activity.completion==2 %}green{% elif 
+activity.completion==1 %}black{% else %}red{% endif %};">Time: {{ activity.time 
+}}</p>
+</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No data read</p>
+{% endif %}
+<form method="POST" action="{{ url_for('reset') }}">
+<button type="submit">Reset</button>
+</form>
+</body>
+</html>
